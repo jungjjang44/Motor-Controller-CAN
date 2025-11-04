@@ -2,11 +2,9 @@ package.xml
 setup.cfg
 setup.py
 can_test/__init__.py
+can_test/can_interface (copy).py
 can_test/can_interface.py
-can_test/can_kvaser_test.py
-can_test/can_monitor.py
 can_test/cmd_publisher.py
-can_test/kvaser_can_example.py
 can_test.egg-info/PKG-INFO
 can_test.egg-info/SOURCES.txt
 can_test.egg-info/dependency_links.txt

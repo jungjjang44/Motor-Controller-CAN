@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/WheelRPM.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message   #")
+    struct WheelRPM {
+      int16 left_rpm;
+
+      int16 right_rpm;
+    };
+  };
+};

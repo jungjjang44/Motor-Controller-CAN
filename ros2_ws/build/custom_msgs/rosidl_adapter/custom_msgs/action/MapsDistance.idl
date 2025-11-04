@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_msgs/action/MapsDistance.action
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "목표 (Goal): FSM이 내리는 명령")
+    struct MapsDistance_Goal {
+      @verbatim (language="comment", text=
+        "이동할 거리 (양수: 전진, 음수: 후진/복귀)")
+      double distance;
+
+      double velocity;
+    };
+    @verbatim (language="comment", text=
+      "결과 (Result): 임무 완료 후 FSM에 보낼 보고")
+    struct MapsDistance_Result {
+      @verbatim (language="comment", text=
+        "성공 여부")
+      boolean success;
+
+      string message;
+
+      double final_distance;
+    };
+    @verbatim (language="comment", text=
+      "피드백 (Feedback): 임무 수행 중 FSM에 보내는 중간 보고")
+    struct MapsDistance_Feedback {
+      @verbatim (language="comment", text=
+        "현재까지 이동한 거리")
+      double distance_traveled;
+    };
+  };
+};

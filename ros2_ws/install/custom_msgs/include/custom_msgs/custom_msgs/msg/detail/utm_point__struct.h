@@ -1,0 +1,1 @@
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/utm_point__struct.h

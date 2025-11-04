@@ -1,0 +1,1 @@
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_introspection_c.h

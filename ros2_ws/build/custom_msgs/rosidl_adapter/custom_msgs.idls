@@ -1,0 +1,5 @@
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/WheelRPM.idl
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/CameraInfo.idl
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/UTMPoint.idl
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:srv/GetPTZImage.idl
+/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:action/MapsDistance.idl

@@ -1,0 +1,2 @@
+float64 avg_distance
+int32 image_count
