@@ -1,0 +1,5 @@
+[console_scripts]
+can_interface = can_test.can_interface:main
+can_monitor = can_test.can_monitor:main
+cmd_publisher = can_test.cmd_publisher:main
+

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating can_test.egg-info
+writing can_test.egg-info/PKG-INFO
+writing dependency_links to can_test.egg-info/dependency_links.txt
+writing entry points to can_test.egg-info/entry_points.txt
+writing requirements to can_test.egg-info/requires.txt
+writing top-level names to can_test.egg-info/top_level.txt
+writing manifest file 'can_test.egg-info/SOURCES.txt'
+reading manifest file 'can_test.egg-info/SOURCES.txt'
+writing manifest file 'can_test.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages/can-test.egg-link (link to .)
+Installing can_interface script to /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/lib/can_test
+Installing can_monitor script to /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/lib/can_test
+Installing cmd_publisher script to /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/lib/can_test
+
+Installed /home/krri/Motor-Controller-CAN/ros2_ws/build/can_test
+running symlink_data
+creating /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index
+creating /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index
+creating /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index/packages
+symbolically linking /home/krri/Motor-Controller-CAN/ros2_ws/build/can_test/resource/can_test -> /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index/packages
+symbolically linking /home/krri/Motor-Controller-CAN/ros2_ws/build/can_test/package.xml -> /home/krri/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test
