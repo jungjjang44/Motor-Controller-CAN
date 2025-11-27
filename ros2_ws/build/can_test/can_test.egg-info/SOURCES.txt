@@ -5,6 +5,7 @@ can_test/__init__.py
 can_test/can_interface (copy).py
 can_test/can_interface.py
 can_test/cmd_publisher.py
+can_test/gui_interface.py
 can_test.egg-info/PKG-INFO
 can_test.egg-info/SOURCES.txt
 can_test.egg-info/dependency_links.txt

@@ -1,0 +1,619 @@
+[0.000000] (-) TimerEvent: {}
+[0.001044] (can_test) JobQueued: {'identifier': 'can_test', 'dependencies': OrderedDict()}
+[0.001769] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002172] (can_test) JobStarted: {'identifier': 'can_test'}
+[0.020401] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.098965] (-) TimerEvent: {}
+[0.199899] (-) TimerEvent: {}
+[0.300854] (-) TimerEvent: {}
+[0.401778] (-) TimerEvent: {}
+[0.502700] (-) TimerEvent: {}
+[0.603678] (-) TimerEvent: {}
+[0.673935] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.675300] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs'], 'cwd': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/Motor-Controller-CAN'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NRU-50_2024-12-24_0920'), ('MANAGERPID', '1244'), ('SYSTEMD_EXEC_PID', '2090'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3693'), ('COLCON_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1423424381639'), ('JOURNAL_STREAM', '8:45353'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tegra-ubuntu:@/tmp/.ICE-unix/1879,unix/tegra-ubuntu:/tmp/.ICE-unix/1879'), ('INVOCATION_ID', 'b5c6802ed55243b3bb15ecde41a9acc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0c6f6c28-ef1e-4dad-b5a3-fd2b928aa043'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/krri/Motor-Controller-CAN/ros2_ws/build/can_test:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble')]), 'shell': False}
+[0.703841] (-) TimerEvent: {}
+[0.804686] (-) TimerEvent: {}
+[0.813553] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.904912] (-) TimerEvent: {}
+[0.939370] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.955928] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.005251] (-) TimerEvent: {}
+[1.106254] (-) TimerEvent: {}
+[1.122631] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.136303] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.138119] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.138717] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.152002] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.206459] (-) TimerEvent: {}
+[1.307418] (-) TimerEvent: {}
+[1.348745] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.362764] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.363391] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.364261] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.369850] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.407565] (-) TimerEvent: {}
+[1.508527] (-) TimerEvent: {}
+[1.574222] (can_test) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/build', '--no-deps', 'symlink_data'], 'cwd': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nvidia', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/nvidia', 'OLDPWD': '/home/nvidia/Motor-Controller-CAN', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.3.0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NRU-50_2024-12-24_0920', 'MANAGERPID': '1244', 'SYSTEMD_EXEC_PID': '2090', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3693', 'COLCON_PREFIX_PATH': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'nvidia', 'JETSON_MODULE': '', 'JETSON_SERIAL_NUMBER': '1423424381639', 'JOURNAL_STREAM': '8:45353', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nvidia', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tegra-ubuntu:@/tmp/.ICE-unix/1879,unix/tegra-ubuntu:/tmp/.ICE-unix/1879', 'INVOCATION_ID': 'b5c6802ed55243b3bb15ecde41a9acc0', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:0c6f6c28-ef1e-4dad-b5a3-fd2b928aa043', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:/home/krri/Motor-Controller-CAN/ros2_ws/build/can_test:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '6.0', 'CMAKE_PREFIX_PATH': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs'}, 'shell': False}
+[1.608741] (-) TimerEvent: {}
+[1.709759] (-) TimerEvent: {}
+[1.759930] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.810005] (-) TimerEvent: {}
+[1.910988] (-) TimerEvent: {}
+[1.932997] (custom_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.005386] (custom_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.011032] (-) TimerEvent: {}
+[2.071362] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.080919] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.096879] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.111158] (-) TimerEvent: {}
+[2.120258] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.152967] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.184063] (can_test) StdoutLine: {'line': b'running develop\n'}
+[2.206860] (custom_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.211254] (-) TimerEvent: {}
+[2.268236] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.311532] (-) TimerEvent: {}
+[2.412530] (-) TimerEvent: {}
+[2.513526] (-) TimerEvent: {}
+[2.536416] (can_test) StdoutLine: {'line': b'running egg_info\n'}
+[2.537186] (can_test) StdoutLine: {'line': b'creating can_test.egg-info\n'}
+[2.537377] (can_test) StdoutLine: {'line': b'writing can_test.egg-info/PKG-INFO\n'}
+[2.537940] (can_test) StdoutLine: {'line': b'writing dependency_links to can_test.egg-info/dependency_links.txt\n'}
+[2.538314] (can_test) StdoutLine: {'line': b'writing entry points to can_test.egg-info/entry_points.txt\n'}
+[2.538578] (can_test) StdoutLine: {'line': b'writing requirements to can_test.egg-info/requires.txt\n'}
+[2.538767] (can_test) StdoutLine: {'line': b'writing top-level names to can_test.egg-info/top_level.txt\n'}
+[2.539483] (can_test) StdoutLine: {'line': b"writing manifest file 'can_test.egg-info/SOURCES.txt'\n"}
+[2.544526] (can_test) StdoutLine: {'line': b"reading manifest file 'can_test.egg-info/SOURCES.txt'\n"}
+[2.546128] (can_test) StdoutLine: {'line': b"writing manifest file 'can_test.egg-info/SOURCES.txt'\n"}
+[2.550774] (can_test) StdoutLine: {'line': b'running build_ext\n'}
+[2.551209] (can_test) StdoutLine: {'line': b'Creating /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages/can-test.egg-link (link to .)\n'}
+[2.553286] (can_test) StdoutLine: {'line': b'Installing can_interface script to /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/can_test\n'}
+[2.553797] (can_test) StdoutLine: {'line': b'Installing cmd_publisher script to /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/can_test\n'}
+[2.554241] (can_test) StdoutLine: {'line': b'\n'}
+[2.554447] (can_test) StdoutLine: {'line': b'Installed /home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test\n'}
+[2.554599] (can_test) StdoutLine: {'line': b'running symlink_data\n'}
+[2.554801] (can_test) StdoutLine: {'line': b'creating /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index\n'}
+[2.554987] (can_test) StdoutLine: {'line': b'creating /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index\n'}
+[2.555164] (can_test) StdoutLine: {'line': b'creating /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index/packages\n'}
+[2.555301] (can_test) StdoutLine: {'line': b'symbolically linking /home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/resource/can_test -> /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/ament_index/resource_index/packages\n'}
+[2.555475] (can_test) StdoutLine: {'line': b'symbolically linking /home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/package.xml -> /home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test\n'}
+[2.613729] (-) TimerEvent: {}
+[2.698092] (can_test) CommandEnded: {'returncode': 0}
+[2.713833] (-) TimerEvent: {}
+[2.727738] (can_test) JobEnded: {'identifier': 'can_test', 'rc': 0}
+[2.814106] (-) TimerEvent: {}
+[2.915122] (-) TimerEvent: {}
+[3.016079] (-) TimerEvent: {}
+[3.117103] (-) TimerEvent: {}
+[3.120278] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.217331] (-) TimerEvent: {}
+[3.318269] (-) TimerEvent: {}
+[3.419286] (-) TimerEvent: {}
+[3.520268] (-) TimerEvent: {}
+[3.621301] (-) TimerEvent: {}
+[3.722274] (-) TimerEvent: {}
+[3.823267] (-) TimerEvent: {}
+[3.924355] (-) TimerEvent: {}
+[4.025634] (-) TimerEvent: {}
+[4.126619] (-) TimerEvent: {}
+[4.227660] (-) TimerEvent: {}
+[4.272349] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.327781] (-) TimerEvent: {}
+[4.428605] (-) TimerEvent: {}
+[4.529586] (-) TimerEvent: {}
+[4.630582] (-) TimerEvent: {}
+[4.731640] (-) TimerEvent: {}
+[4.737867] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.799362] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.804104] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.831808] (-) TimerEvent: {}
+[4.875427] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.876316] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.876516] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.876685] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[4.928123] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.931900] (-) TimerEvent: {}
+[5.032717] (-) TimerEvent: {}
+[5.124390] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.132760] (-) TimerEvent: {}
+[5.160321] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.162775] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.170884] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.233083] (-) TimerEvent: {}
+[5.277264] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.307330] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs\n'}
+[5.333239] (-) TimerEvent: {}
+[5.346456] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.348863] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[5.351491] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/Motor-Controller-CAN'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NRU-50_2024-12-24_0920'), ('MANAGERPID', '1244'), ('SYSTEMD_EXEC_PID', '2090'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3693'), ('COLCON_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1423424381639'), ('JOURNAL_STREAM', '8:45353'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tegra-ubuntu:@/tmp/.ICE-unix/1879,unix/tegra-ubuntu:/tmp/.ICE-unix/1879'), ('INVOCATION_ID', 'b5c6802ed55243b3bb15ecde41a9acc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0c6f6c28-ef1e-4dad-b5a3-fd2b928aa043'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/krri/Motor-Controller-CAN/ros2_ws/build/can_test:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble')]), 'shell': False}
+[5.433523] (-) TimerEvent: {}
+[5.454213] (custom_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.481563] (custom_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.506981] (custom_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_custom_msgs\n'}
+[5.533754] (-) TimerEvent: {}
+[5.634900] (-) TimerEvent: {}
+[5.735863] (-) TimerEvent: {}
+[5.836876] (-) TimerEvent: {}
+[5.937803] (-) TimerEvent: {}
+[6.038670] (-) TimerEvent: {}
+[6.115615] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.117524] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[6.118054] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[6.118599] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[6.119022] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[6.119510] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[6.124425] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[6.125660] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[6.138887] (-) TimerEvent: {}
+[6.240306] (-) TimerEvent: {}
+[6.249180] (custom_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[6.340533] (-) TimerEvent: {}
+[6.441393] (-) TimerEvent: {}
+[6.542254] (-) TimerEvent: {}
+[6.643225] (-) TimerEvent: {}
+[6.744096] (-) TimerEvent: {}
+[6.845093] (-) TimerEvent: {}
+[6.946013] (-) TimerEvent: {}
+[7.046967] (-) TimerEvent: {}
+[7.148133] (-) TimerEvent: {}
+[7.249330] (-) TimerEvent: {}
+[7.349491] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/wheel_rpm__functions.c.o\x1b[0m\n'}
+[7.350268] (-) TimerEvent: {}
+[7.362793] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/camera_info__functions.c.o\x1b[0m\n'}
+[7.387703] (custom_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/utm_point__functions.c.o\x1b[0m\n'}
+[7.433236] (custom_msgs) StdoutLine: {'line': b'[  7%] Built target custom_msgs__cpp\n'}
+[7.450631] (-) TimerEvent: {}
+[7.460008] (custom_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/get_ptz_image__functions.c.o\x1b[0m\n'}
+[7.505099] (custom_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/action/detail/maps_distance__functions.c.o\x1b[0m\n'}
+[7.512775] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.540628] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.550861] (-) TimerEvent: {}
+[7.634515] (custom_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.651105] (-) TimerEvent: {}
+[7.752073] (-) TimerEvent: {}
+[7.853031] (-) TimerEvent: {}
+[7.908653] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.953262] (-) TimerEvent: {}
+[8.014282] (custom_msgs) StdoutLine: {'line': b'[ 17%] Built target custom_msgs__rosidl_generator_c\n'}
+[8.045724] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.053436] (-) TimerEvent: {}
+[8.154281] (-) TimerEvent: {}
+[8.255237] (-) TimerEvent: {}
+[8.356179] (-) TimerEvent: {}
+[8.457066] (-) TimerEvent: {}
+[8.557987] (-) TimerEvent: {}
+[8.658925] (-) TimerEvent: {}
+[8.759892] (-) TimerEvent: {}
+[8.853741] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/wheel_rpm__type_support.cpp.o\x1b[0m\n'}
+[8.860000] (-) TimerEvent: {}
+[8.960758] (-) TimerEvent: {}
+[9.061732] (-) TimerEvent: {}
+[9.162731] (-) TimerEvent: {}
+[9.257979] (custom_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/wheel_rpm__type_support.cpp.o\x1b[0m\n'}
+[9.262928] (-) TimerEvent: {}
+[9.363851] (-) TimerEvent: {}
+[9.464905] (-) TimerEvent: {}
+[9.515077] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/wheel_rpm__type_support.cpp.o\x1b[0m\n'}
+[9.565180] (-) TimerEvent: {}
+[9.666114] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/camera_info__type_support.cpp.o\x1b[0m\n'}
+[9.666933] (-) TimerEvent: {}
+[9.767701] (-) TimerEvent: {}
+[9.868827] (-) TimerEvent: {}
+[9.901769] (custom_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/wheel_rpm__type_support_c.cpp.o\x1b[0m\n'}
+[9.969144] (-) TimerEvent: {}
+[10.070337] (-) TimerEvent: {}
+[10.171483] (-) TimerEvent: {}
+[10.272729] (-) TimerEvent: {}
+[10.373874] (-) TimerEvent: {}
+[10.404720] (custom_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/utm_point__type_support.cpp.o\x1b[0m\n'}
+[10.444752] (custom_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/camera_info__type_support.cpp.o\x1b[0m\n'}
+[10.474167] (-) TimerEvent: {}
+[10.575271] (-) TimerEvent: {}
+[10.676425] (-) TimerEvent: {}
+[10.769809] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/camera_info__type_support.cpp.o\x1b[0m\n'}
+[10.776721] (-) TimerEvent: {}
+[10.877794] (-) TimerEvent: {}
+[10.900051] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/camera_info__type_support_c.cpp.o\x1b[0m\n'}
+[10.978085] (-) TimerEvent: {}
+[11.079234] (-) TimerEvent: {}
+[11.180407] (-) TimerEvent: {}
+[11.281652] (-) TimerEvent: {}
+[11.382815] (-) TimerEvent: {}
+[11.484117] (-) TimerEvent: {}
+[11.519926] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/get_ptz_image__type_support.cpp.o\x1b[0m\n'}
+[11.584410] (-) TimerEvent: {}
+[11.685617] (-) TimerEvent: {}
+[11.707325] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/utm_point__type_support.cpp.o\x1b[0m\n'}
+[11.785907] (-) TimerEvent: {}
+[11.887073] (-) TimerEvent: {}
+[11.988283] (-) TimerEvent: {}
+[12.089450] (-) TimerEvent: {}
+[12.190604] (-) TimerEvent: {}
+[12.291739] (-) TimerEvent: {}
+[12.318734] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/utm_point__type_support_c.cpp.o\x1b[0m\n'}
+[12.392020] (-) TimerEvent: {}
+[12.493241] (-) TimerEvent: {}
+[12.501028] (custom_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/utm_point__type_support.cpp.o\x1b[0m\n'}
+[12.593548] (-) TimerEvent: {}
+[12.694716] (-) TimerEvent: {}
+[12.795864] (-) TimerEvent: {}
+[12.897192] (-) TimerEvent: {}
+[12.998349] (-) TimerEvent: {}
+[13.099554] (-) TimerEvent: {}
+[13.200797] (-) TimerEvent: {}
+[13.301963] (-) TimerEvent: {}
+[13.403125] (-) TimerEvent: {}
+[13.504238] (-) TimerEvent: {}
+[13.605721] (-) TimerEvent: {}
+[13.682323] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/get_ptz_image__type_support.cpp.o\x1b[0m\n'}
+[13.706024] (-) TimerEvent: {}
+[13.755870] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/action/maps_distance__type_support.cpp.o\x1b[0m\n'}
+[13.806305] (-) TimerEvent: {}
+[13.907530] (-) TimerEvent: {}
+[14.008730] (-) TimerEvent: {}
+[14.109962] (-) TimerEvent: {}
+[14.211224] (-) TimerEvent: {}
+[14.312753] (-) TimerEvent: {}
+[14.367390] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_ptz_image__type_support_c.cpp.o\x1b[0m\n'}
+[14.413042] (-) TimerEvent: {}
+[14.438049] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/get_ptz_image__type_support.cpp.o\x1b[0m\n'}
+[14.513364] (-) TimerEvent: {}
+[14.614493] (-) TimerEvent: {}
+[14.715648] (-) TimerEvent: {}
+[14.816862] (-) TimerEvent: {}
+[14.859353] (custom_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/action/detail/maps_distance__type_support.cpp.o\x1b[0m\n'}
+[14.917129] (-) TimerEvent: {}
+[15.018451] (-) TimerEvent: {}
+[15.119629] (-) TimerEvent: {}
+[15.177050] (custom_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[15.219916] (-) TimerEvent: {}
+[15.292709] (custom_msgs) StdoutLine: {'line': b'[ 49%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[15.320237] (-) TimerEvent: {}
+[15.321564] (custom_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/action/detail/dds_fastrtps/maps_distance__type_support.cpp.o\x1b[0m\n'}
+[15.420540] (-) TimerEvent: {}
+[15.509402] (custom_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/action/detail/maps_distance__type_support_c.cpp.o\x1b[0m\n'}
+[15.520747] (-) TimerEvent: {}
+[15.621872] (-) TimerEvent: {}
+[15.723042] (-) TimerEvent: {}
+[15.779360] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[15.823317] (-) TimerEvent: {}
+[15.924419] (-) TimerEvent: {}
+[16.025532] (-) TimerEvent: {}
+[16.126632] (-) TimerEvent: {}
+[16.227692] (-) TimerEvent: {}
+[16.328801] (-) TimerEvent: {}
+[16.429810] (-) TimerEvent: {}
+[16.530901] (-) TimerEvent: {}
+[16.632248] (-) TimerEvent: {}
+[16.645535] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[16.733013] (-) TimerEvent: {}
+[16.808934] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.833265] (-) TimerEvent: {}
+[16.900755] (custom_msgs) StdoutLine: {'line': b'[ 57%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[16.933537] (-) TimerEvent: {}
+[16.934947] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.963825] (custom_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.033756] (-) TimerEvent: {}
+[17.134718] (-) TimerEvent: {}
+[17.152643] (custom_msgs) StdoutLine: {'line': b'[ 60%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[17.234953] (-) TimerEvent: {}
+[17.235700] (custom_msgs) StdoutLine: {'line': b'[ 60%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[17.335185] (-) TimerEvent: {}
+[17.436259] (-) TimerEvent: {}
+[17.537353] (-) TimerEvent: {}
+[17.564415] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/utm_point__type_support.c.o\x1b[0m\n'}
+[17.565118] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/camera_info__type_support.c.o\x1b[0m\n'}
+[17.565458] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/wheel_rpm__type_support.c.o\x1b[0m\n'}
+[17.637572] (-) TimerEvent: {}
+[17.666339] (custom_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/get_ptz_image__type_support.c.o\x1b[0m\n'}
+[17.669277] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/action/detail/maps_distance__type_support.c.o\x1b[0m\n'}
+[17.737832] (-) TimerEvent: {}
+[17.795322] (custom_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[17.838055] (-) TimerEvent: {}
+[17.876908] (custom_msgs) StdoutLine: {'line': b'[ 69%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[17.938354] (-) TimerEvent: {}
+[18.039538] (-) TimerEvent: {}
+[18.086112] (custom_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/wheel_rpm__type_support.cpp.o\x1b[0m\n'}
+[18.087074] (custom_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/utm_point__type_support.cpp.o\x1b[0m\n'}
+[18.087434] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/get_ptz_image__type_support.cpp.o\x1b[0m\n'}
+[18.093109] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/camera_info__type_support.cpp.o\x1b[0m\n'}
+[18.139808] (-) TimerEvent: {}
+[18.171917] (custom_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/action/maps_distance__type_support.cpp.o\x1b[0m\n'}
+[18.240082] (-) TimerEvent: {}
+[18.300293] (custom_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[18.340348] (-) TimerEvent: {}
+[18.397678] (custom_msgs) StdoutLine: {'line': b'[ 79%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[18.440703] (-) TimerEvent: {}
+[18.449306] (custom_msgs) StdoutLine: {'line': b'[ 79%] Built target custom_msgs\n'}
+[18.505694] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[18.540909] (-) TimerEvent: {}
+[18.641833] (-) TimerEvent: {}
+[18.742746] (-) TimerEvent: {}
+[18.843697] (-) TimerEvent: {}
+[18.944798] (-) TimerEvent: {}
+[19.045898] (-) TimerEvent: {}
+[19.146823] (-) TimerEvent: {}
+[19.247749] (-) TimerEvent: {}
+[19.348749] (-) TimerEvent: {}
+[19.449682] (-) TimerEvent: {}
+[19.550693] (-) TimerEvent: {}
+[19.651647] (-) TimerEvent: {}
+[19.752662] (-) TimerEvent: {}
+[19.853633] (-) TimerEvent: {}
+[19.954575] (-) TimerEvent: {}
+[20.055570] (-) TimerEvent: {}
+[20.156513] (-) TimerEvent: {}
+[20.257423] (-) TimerEvent: {}
+[20.358425] (-) TimerEvent: {}
+[20.459490] (-) TimerEvent: {}
+[20.560380] (-) TimerEvent: {}
+[20.661401] (-) TimerEvent: {}
+[20.762519] (-) TimerEvent: {}
+[20.863546] (-) TimerEvent: {}
+[20.964540] (-) TimerEvent: {}
+[21.065449] (-) TimerEvent: {}
+[21.166367] (-) TimerEvent: {}
+[21.267358] (-) TimerEvent: {}
+[21.368737] (-) TimerEvent: {}
+[21.418089] (custom_msgs) StdoutLine: {'line': b'[ 80%] Built target custom_msgs__py\n'}
+[21.468991] (-) TimerEvent: {}
+[21.469965] (custom_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_utm_point_s.c.o\x1b[0m\n'}
+[21.470685] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_get_ptz_image_s.c.o\x1b[0m\n'}
+[21.471051] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_wheel_rpm_s.c.o\x1b[0m\n'}
+[21.471339] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_camera_info_s.c.o\x1b[0m\n'}
+[21.569243] (-) TimerEvent: {}
+[21.670328] (-) TimerEvent: {}
+[21.771622] (-) TimerEvent: {}
+[21.872750] (-) TimerEvent: {}
+[21.973838] (-) TimerEvent: {}
+[22.007447] (custom_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/action/_maps_distance_s.c.o\x1b[0m\n'}
+[22.074148] (-) TimerEvent: {}
+[22.175248] (-) TimerEvent: {}
+[22.276359] (-) TimerEvent: {}
+[22.377559] (-) TimerEvent: {}
+[22.478660] (-) TimerEvent: {}
+[22.512265] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[22.578936] (-) TimerEvent: {}
+[22.620172] (custom_msgs) StdoutLine: {'line': b'[ 90%] Built target custom_msgs__rosidl_generator_py\n'}
+[22.672105] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[22.672906] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[22.673114] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[22.679108] (-) TimerEvent: {}
+[22.780314] (-) TimerEvent: {}
+[22.881477] (-) TimerEvent: {}
+[22.982719] (-) TimerEvent: {}
+[23.028412] (custom_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[23.031306] (custom_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[23.068863] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[23.082990] (-) TimerEvent: {}
+[23.184072] (-) TimerEvent: {}
+[23.285236] (-) TimerEvent: {}
+[23.315399] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[23.357849] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[23.385517] (-) TimerEvent: {}
+[23.386673] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[23.438042] (custom_msgs) CommandEnded: {'returncode': 0}
+[23.439638] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[23.485804] (-) TimerEvent: {}
+[23.514021] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs'], 'cwd': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia/Motor-Controller-CAN'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NRU-50_2024-12-24_0920'), ('MANAGERPID', '1244'), ('SYSTEMD_EXEC_PID', '2090'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3693'), ('COLCON_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1423424381639'), ('JOURNAL_STREAM', '8:45353'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tegra-ubuntu:@/tmp/.ICE-unix/1879,unix/tegra-ubuntu:/tmp/.ICE-unix/1879'), ('INVOCATION_ID', 'b5c6802ed55243b3bb15ecde41a9acc0'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0c6f6c28-ef1e-4dad-b5a3-fd2b928aa043'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/krri/Motor-Controller-CAN/ros2_ws/build/can_test:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble')]), 'shell': False}
+[23.541590] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.542596] (custom_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.543462] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[23.572042] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__functions.h\n'}
+[23.586072] (-) TimerEvent: {}
+[23.600966] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__struct.h\n'}
+[23.630871] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__type_support.h\n'}
+[23.654965] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/maps_distance.h\n'}
+[23.677166] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/camera_info.h\n'}
+[23.686207] (-) TimerEvent: {}
+[23.702673] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__functions.h\n'}
+[23.727569] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__struct.h\n'}
+[23.751987] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__type_support.h\n'}
+[23.778322] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__functions.h\n'}
+[23.786349] (-) TimerEvent: {}
+[23.800148] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__struct.h\n'}
+[23.823398] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__type_support.h\n'}
+[23.847161] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__functions.h\n'}
+[23.873709] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__struct.h\n'}
+[23.886577] (-) TimerEvent: {}
+[23.897487] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__type_support.h\n'}
+[23.921787] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[23.946439] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/utm_point.h\n'}
+[23.971261] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/wheel_rpm.h\n'}
+[23.986847] (-) TimerEvent: {}
+[23.995494] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__functions.h\n'}
+[24.021278] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__struct.h\n'}
+[24.046118] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__type_support.h\n'}
+[24.068270] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/get_ptz_image.h\n'}
+[24.087575] (-) TimerEvent: {}
+[24.091754] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[24.118915] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[24.145708] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_fastrtps_c.h\n'}
+[24.169302] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_fastrtps_c.h\n'}
+[24.187845] (-) TimerEvent: {}
+[24.193587] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_fastrtps_c.h\n'}
+[24.218233] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_fastrtps_c.h\n'}
+[24.242476] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[24.266142] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_fastrtps_c.h\n'}
+[24.288103] (-) TimerEvent: {}
+[24.291435] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__builder.hpp\n'}
+[24.314073] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__struct.hpp\n'}
+[24.336995] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__traits.hpp\n'}
+[24.361430] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__type_support.hpp\n'}
+[24.384533] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/maps_distance.hpp\n'}
+[24.388134] (-) TimerEvent: {}
+[24.407209] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/camera_info.hpp\n'}
+[24.433320] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__builder.hpp\n'}
+[24.460603] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__struct.hpp\n'}
+[24.487491] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__traits.hpp\n'}
+[24.488263] (-) TimerEvent: {}
+[24.511445] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__type_support.hpp\n'}
+[24.536403] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__builder.hpp\n'}
+[24.558287] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__struct.hpp\n'}
+[24.580704] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__traits.hpp\n'}
+[24.588393] (-) TimerEvent: {}
+[24.603083] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__type_support.hpp\n'}
+[24.627287] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__builder.hpp\n'}
+[24.650139] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__struct.hpp\n'}
+[24.671641] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__traits.hpp\n'}
+[24.688599] (-) TimerEvent: {}
+[24.693198] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__type_support.hpp\n'}
+[24.714681] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[24.737648] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/utm_point.hpp\n'}
+[24.758997] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/wheel_rpm.hpp\n'}
+[24.780828] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__builder.hpp\n'}
+[24.788760] (-) TimerEvent: {}
+[24.802308] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__struct.hpp\n'}
+[24.824789] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__traits.hpp\n'}
+[24.848181] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__type_support.hpp\n'}
+[24.871250] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/get_ptz_image.hpp\n'}
+[24.888964] (-) TimerEvent: {}
+[24.896102] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.918595] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.943054] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.964387] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.987391] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[24.989008] (-) TimerEvent: {}
+[25.009789] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.033883] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_introspection_c.h\n'}
+[25.056128] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_introspection_c.h\n'}
+[25.077700] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_introspection_c.h\n'}
+[25.089190] (-) TimerEvent: {}
+[25.099611] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_introspection_c.h\n'}
+[25.123988] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[25.146018] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_introspection_c.h\n'}
+[25.169236] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.189416] (-) TimerEvent: {}
+[25.190764] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.212094] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.236294] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.258609] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.281111] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[25.289549] (-) TimerEvent: {}
+[25.302787] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[25.326767] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[25.348413] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[25.369972] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[25.389794] (-) TimerEvent: {}
+[25.391040] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[25.415474] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[25.438533] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[25.460948] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[25.481868] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[25.489937] (-) TimerEvent: {}
+[25.504519] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/__init__.py\n'}
+[25.526726] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_maps_distance.py\n'}
+[25.548721] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_maps_distance_s.c\n'}
+[25.571334] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.590123] (-) TimerEvent: {}
+[25.592065] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.614074] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.637533] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[25.660409] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[25.682418] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_camera_info.py\n'}
+[25.690197] (-) TimerEvent: {}
+[25.704430] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_camera_info_s.c\n'}
+[25.727756] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_utm_point.py\n'}
+[25.750493] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_utm_point_s.c\n'}
+[25.771763] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_wheel_rpm.py\n'}
+[25.790490] (-) TimerEvent: {}
+[25.794260] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_wheel_rpm_s.c\n'}
+[25.816704] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py\n'}
+[25.839345] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_get_ptz_image.py\n'}
+[25.860795] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_get_ptz_image_s.c\n'}
+[25.882796] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.883654] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.884417] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[25.885242] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/WheelRPM.idl\n'}
+[25.890589] (-) TimerEvent: {}
+[25.907207] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/CameraInfo.idl\n'}
+[25.929946] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/UTMPoint.idl\n'}
+[25.952796] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage.idl\n'}
+[25.974105] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/action/MapsDistance.idl\n'}
+[25.990804] (-) TimerEvent: {}
+[25.995391] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/WheelRPM.msg\n'}
+[26.018274] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/CameraInfo.msg\n'}
+[26.041254] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/UTMPoint.msg\n'}
+[26.062844] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage.srv\n'}
+[26.084310] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage_Request.msg\n'}
+[26.090884] (-) TimerEvent: {}
+[26.106511] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage_Response.msg\n'}
+[26.130691] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/action/MapsDistance.action\n'}
+[26.154004] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[26.176125] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[26.191045] (-) TimerEvent: {}
+[26.197594] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[26.218844] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[26.241228] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[26.262963] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[26.284367] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[26.291187] (-) TimerEvent: {}
+[26.306652] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[26.330158] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[26.351846] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[26.374102] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[26.391357] (-) TimerEvent: {}
+[26.395809] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[26.418460] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[26.442191] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.464525] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.486101] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.491468] (-) TimerEvent: {}
+[26.508182] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[26.530576] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[26.553627] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[26.575316] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[26.591657] (-) TimerEvent: {}
+[26.596813] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[26.618754] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[26.643750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[26.645062] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[26.645361] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[26.646030] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[26.646371] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[26.647800] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[26.648287] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[26.649232] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[26.649599] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[26.650524] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[26.650896] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[26.652234] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[26.652780] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[26.653587] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[26.691814] (-) TimerEvent: {}
+[26.759289] (custom_msgs) StdoutLine: {'line': b"Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[26.759969] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[26.760150] (custom_msgs) StdoutLine: {'line': b"Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action'...\n"}
+[26.760300] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/__init__.py'...\n"}
+[26.760444] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_maps_distance.py'...\n"}
+[26.760624] (custom_msgs) StdoutLine: {'line': b"Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[26.760763] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[26.760890] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_camera_info.py'...\n"}
+[26.761014] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_utm_point.py'...\n"}
+[26.761147] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_wheel_rpm.py'...\n"}
+[26.761325] (custom_msgs) StdoutLine: {'line': b"Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...\n"}
+[26.761459] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py'...\n"}
+[26.761579] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_get_ptz_image.py'...\n"}
+[26.777688] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[26.779023] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[26.779375] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[26.779945] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[26.780583] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[26.781131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[26.781722] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[26.782279] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[26.782813] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[26.783397] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[26.783924] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[26.784510] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[26.785121] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[26.785720] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[26.786260] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[26.786816] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[26.787340] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[26.787870] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[26.788493] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[26.791890] (-) TimerEvent: {}
+[26.798083] (custom_msgs) CommandEnded: {'returncode': 0}
+[26.863238] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[26.865780] (-) EventReactorShutdown: {}

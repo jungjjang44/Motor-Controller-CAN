@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs
 
 # Utility rule file for ament_cmake_python_symlink_custom_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/compiler_depend.ma
 include CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_custom_msgs:
-	/usr/bin/cmake -E create_symlink /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/ament_cmake_python/custom_msgs/custom_msgs
+	/usr/bin/cmake -E create_symlink /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/ament_cmake_python/custom_msgs/custom_msgs
 
 ament_cmake_python_symlink_custom_msgs: CMakeFiles/ament_cmake_python_symlink_custom_msgs
 ament_cmake_python_symlink_custom_msgs: CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/depend:
-	cd /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_custom_msgs.dir/depend
 

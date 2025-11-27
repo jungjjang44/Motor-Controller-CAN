@@ -1,1 +1,1 @@
-/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs/msg/CameraInfo.msg
+/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs/msg/CameraInfo.msg

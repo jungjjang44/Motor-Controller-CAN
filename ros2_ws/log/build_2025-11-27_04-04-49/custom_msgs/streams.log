@@ -1,0 +1,205 @@
+[0.706s] Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs -- -j4 -l4
+[0.865s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_c[0m
+[0.896s] [  1%] Built target custom_msgs__cpp
+[0.905s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[0.924s] [ 12%] Built target ament_cmake_python_symlink_custom_msgs
+[0.938s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_cpp[0m
+[0.946s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.964s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.987s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.001s] [ 23%] Built target custom_msgs__rosidl_typesupport_cpp
+[1.030s] [ 46%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[1.031s] [ 46%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[1.034s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c[0m
+[1.035s] [ 57%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[1.064s] [ 68%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[1.067s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c[0m
+[1.103s] [ 79%] Built target custom_msgs__rosidl_typesupport_c
+[1.168s] [ 79%] Built target custom_msgs
+[1.238s] [ 80%] Built target custom_msgs__py
+[1.285s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_py[0m
+[1.338s] [ 90%] Built target custom_msgs__rosidl_generator_py
+[1.373s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.376s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.415s] [ 93%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[1.425s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c__pyext[0m
+[1.438s] [ 96%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.463s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[1.651s] running egg_info
+[1.655s] writing custom_msgs.egg-info/PKG-INFO
+[1.656s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[1.657s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[1.665s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[1.666s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[1.798s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[1.836s] Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs -- -j4 -l4
+[1.868s] Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs
+[1.891s] -- Install configuration: ""
+[1.892s] -- Execute custom install script
+[1.893s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[1.896s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__functions.h
+[1.896s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__struct.h
+[1.897s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__type_support.h
+[1.897s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/maps_distance.h
+[1.897s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/camera_info.h
+[1.897s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__functions.h
+[1.898s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__struct.h
+[1.898s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__type_support.h
+[1.899s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__functions.h
+[1.899s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__struct.h
+[1.899s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__type_support.h
+[1.900s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__functions.h
+[1.900s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__struct.h
+[1.900s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__type_support.h
+[1.900s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.901s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/utm_point.h
+[1.901s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/wheel_rpm.h
+[1.902s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__functions.h
+[1.902s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__struct.h
+[1.902s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__type_support.h
+[1.903s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/get_ptz_image.h
+[1.903s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[1.904s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[1.905s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_fastrtps_c.h
+[1.905s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_fastrtps_c.h
+[1.906s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_fastrtps_c.h
+[1.906s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_fastrtps_c.h
+[1.907s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.907s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_fastrtps_c.h
+[1.908s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__builder.hpp
+[1.909s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__struct.hpp
+[1.909s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__traits.hpp
+[1.909s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__type_support.hpp
+[1.910s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/maps_distance.hpp
+[1.910s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/camera_info.hpp
+[1.912s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__builder.hpp
+[1.912s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__struct.hpp
+[1.913s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__traits.hpp
+[1.914s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__type_support.hpp
+[1.914s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__builder.hpp
+[1.914s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__struct.hpp
+[1.915s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__traits.hpp
+[1.915s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__type_support.hpp
+[1.915s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__builder.hpp
+[1.915s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__struct.hpp
+[1.915s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__traits.hpp
+[1.916s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__type_support.hpp
+[1.916s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.916s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/utm_point.hpp
+[1.917s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/wheel_rpm.hpp
+[1.917s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__builder.hpp
+[1.917s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__struct.hpp
+[1.918s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__traits.hpp
+[1.919s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__type_support.hpp
+[1.919s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/get_ptz_image.hpp
+[1.920s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[1.920s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_fastrtps_cpp.hpp
+[1.920s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_fastrtps_cpp.hpp
+[1.920s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_fastrtps_cpp.hpp
+[1.920s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.921s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_fastrtps_cpp.hpp
+[1.922s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_introspection_c.h
+[1.922s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_introspection_c.h
+[1.923s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_introspection_c.h
+[1.923s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_introspection_c.h
+[1.923s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.924s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_introspection_c.h
+[1.925s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/action/detail/maps_distance__rosidl_typesupport_introspection_cpp.hpp
+[1.925s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/camera_info__rosidl_typesupport_introspection_cpp.hpp
+[1.925s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/utm_point__rosidl_typesupport_introspection_cpp.hpp
+[1.926s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/wheel_rpm__rosidl_typesupport_introspection_cpp.hpp
+[1.926s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/get_ptz_image__rosidl_typesupport_introspection_cpp.hpp
+[1.927s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[1.927s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[1.929s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[1.929s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.929s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.929s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[1.931s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[1.931s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[1.931s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.932s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.932s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/__init__.py
+[1.932s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_maps_distance.py
+[1.933s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action/_maps_distance_s.c
+[1.933s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.933s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.934s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.934s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[1.935s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[1.935s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_camera_info.py
+[1.935s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_camera_info_s.c
+[1.935s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_utm_point.py
+[1.936s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_utm_point_s.c
+[1.936s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_wheel_rpm.py
+[1.936s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_wheel_rpm_s.c
+[1.937s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py
+[1.937s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_get_ptz_image.py
+[1.937s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_get_ptz_image_s.c
+[1.938s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.939s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.940s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.940s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/WheelRPM.idl
+[1.941s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/CameraInfo.idl
+[1.941s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/UTMPoint.idl
+[1.942s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage.idl
+[1.942s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/action/MapsDistance.idl
+[1.943s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/WheelRPM.msg
+[1.943s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/CameraInfo.msg
+[1.943s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/msg/UTMPoint.msg
+[1.944s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage.srv
+[1.944s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage_Request.msg
+[1.946s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/srv/GetPTZImage_Response.msg
+[1.946s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/action/MapsDistance.action
+[1.946s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[1.946s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[1.946s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[1.947s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[1.947s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh
+[1.948s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[1.948s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash
+[1.948s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh
+[1.949s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[1.949s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[1.949s] -- Symlinking: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv
+[1.976s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[1.977s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[1.977s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.977s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.978s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.978s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.979s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.980s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.980s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[1.980s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[1.981s] -- Up-to-date symlink: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml
+[1.981s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[1.982s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[1.983s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.984s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[1.986s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[1.986s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[1.987s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[2.070s] Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[2.070s] Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/action'...
+[2.070s] Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[2.070s] Listing '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...
+[2.087s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[2.088s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[2.088s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.089s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.089s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.089s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[2.090s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.090s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.090s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.090s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.091s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[2.091s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.091s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.091s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.092s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[2.092s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.092s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[2.093s] -- Up-to-date: /home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.101s] Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs

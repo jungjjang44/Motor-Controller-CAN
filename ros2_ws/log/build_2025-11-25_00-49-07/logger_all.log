@@ -1,0 +1,207 @@
+[0.242s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.242s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffac010160>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffabfd7c10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffabfd7c10>>)
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.613s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.614s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.614s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.614s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nvidia/Motor-Controller-CAN/ros2_ws'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extension 'ignore'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extension 'ignore_ament_install'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extensions ['colcon_pkg']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extension 'colcon_pkg'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extensions ['colcon_meta']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extension 'colcon_meta'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extensions ['ros']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_test) by extension 'ros'
+[0.654s] DEBUG:colcon.colcon_core.package_identification:Package 'src/can_test' with type 'ros.ament_python' and name 'can_test'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.657s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.706s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.706s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.708s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/nvidia/Motor-Controller-CAN/ros2_ws/install
+[0.711s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_args' from command line to 'None'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_target' from command line to 'None'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.852s] Level 5:colcon.colcon_core.verb:set package 'can_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.853s] DEBUG:colcon.colcon_core.verb:Building package 'can_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test', 'merge_install': False, 'path': '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/can_test', 'symlink_install': True, 'test_result_base': None}
+[0.853s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.853s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.853s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.853s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.854s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.854s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.854s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.854s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.854s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.854s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.854s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.858s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.859s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/can_test' with build type 'ament_python'
+[0.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_test', 'ament_prefix_path')
+[0.864s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/ament_prefix_path.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/ament_prefix_path.dsv'
+[0.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/ament_prefix_path.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.870s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.877s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.878s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs'
+[0.879s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.879s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.520s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nvidia/Motor-Controller-CAN/ros2_ws/src/can_test'
+[1.521s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.521s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs
+[2.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test': PYTHONPATH=/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/build --no-deps symlink_data
+[3.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_test', 'pythonpath_develop')
+[3.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/share/can_test/hook/pythonpath_develop.ps1'
+[3.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test' returned '0': PYTHONPATH=/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/build --no-deps symlink_data
+[3.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/share/can_test/hook/pythonpath_develop.dsv'
+[3.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/can_test/share/can_test/hook/pythonpath_develop.sh'
+[3.567s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test' for CMake module files
+[3.568s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test' for CMake config files
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib'
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/bin'
+[3.570s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/pkgconfig/can_test.pc'
+[3.571s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/lib/python3.10/site-packages'
+[3.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_test', 'pythonpath')
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/pythonpath.ps1'
+[3.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/pythonpath.dsv'
+[3.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/hook/pythonpath.sh'
+[3.575s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/bin'
+[3.575s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_test)
+[3.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/package.ps1'
+[3.578s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/package.dsv'
+[3.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/package.sh'
+[3.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/package.bash'
+[3.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/can_test/package.zsh'
+[3.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test/share/colcon-core/packages/can_test)
+[6.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs
+[6.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs -- -j4 -l4
+[24.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs -- -j4 -l4
+[24.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs
+[27.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[27.656s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs' for CMake module files
+[27.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nvidia/Motor-Controller-CAN/ros2_ws/install/can_test:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs
+[27.660s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs' for CMake config files
+[27.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[27.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[27.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[27.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[27.672s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib'
+[27.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[27.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[27.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[27.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[27.677s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/bin'
+[27.677s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[27.678s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/python3.10/site-packages'
+[27.680s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/bin'
+[27.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[27.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[27.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[27.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[27.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[27.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[27.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[27.693s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs' for CMake module files
+[27.695s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs' for CMake config files
+[27.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[27.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[27.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[27.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[27.705s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib'
+[27.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[27.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[27.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[27.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[27.710s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/bin'
+[27.710s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[27.710s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/lib/python3.10/site-packages'
+[27.711s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/bin'
+[27.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[27.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[27.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[27.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[27.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[27.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/Motor-Controller-CAN/ros2_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[27.720s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.721s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.722s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.745s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.745s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.746s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.809s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.811s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/local_setup.ps1'
+[27.814s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/_local_setup_util_ps1.py'
+[27.818s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/setup.ps1'
+[27.821s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/local_setup.sh'
+[27.823s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/_local_setup_util_sh.py'
+[27.825s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/setup.sh'
+[27.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/local_setup.bash'
+[27.830s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/setup.bash'
+[27.832s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/local_setup.zsh'
+[27.833s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/Motor-Controller-CAN/ros2_ws/install/setup.zsh'

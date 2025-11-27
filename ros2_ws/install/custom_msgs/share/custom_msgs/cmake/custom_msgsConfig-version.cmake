@@ -1,1 +1,1 @@
-/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/ament_cmake_core/custom_msgsConfig-version.cmake
+/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/ament_cmake_core/custom_msgsConfig-version.cmake

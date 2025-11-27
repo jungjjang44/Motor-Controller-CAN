@@ -1,73 +1,100 @@
 #!/usr/bin/env python3
 
-import math
-import can  # ✅ Kvaser 대신 python-can 사용
+# s
+import can
 import rclpy
+import time
 from rclpy.node import Node
-from std_msgs.msg import Int16, Int32
-from nav_msgs.msg import Odometry
+from std_msgs.msg import Int32, Float32
 from custom_msgs.msg import WheelRPM
 
 class CANInterface(Node):
     def __init__(self):
         super().__init__("can_interface")
 
-        # ✅ SocketCAN 초기화
+        # ==========================================
+        # ⚙️ [설정] 환경에 맞게 수정
+        # ==========================================
+        self.channel = 'can0'       
+        self.target_id = 0x100      # 모터 피드백 ID
+        self.PPR = 4096             # 분해능
+        # ==========================================
+
+        # CAN 연결
         try:
-            self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
-            self.get_logger().info("✅ SocketCAN 연결 성공 (can0)")
+            self.bus = can.Bus(channel=self.channel, interface='socketcan', bitrate=500000)
+            self.get_logger().info(f"✅ CAN 연결 성공 ({self.channel})")
         except Exception as e:
             self.get_logger().error(f"❌ CAN 초기화 실패: {e}")
             self.bus = None
             return
 
-        self.latest_cmd_rpm = WheelRPM()
-        self.left_rpm = 0
-        self.left_encoder = 0
+        # 이전 명령값 저장용 (중복 전송 방지)
+        self.prev_left_cmd = None
+        self.prev_right_cmd = None
 
-        self.x = 0.0
-        self.y = 0.0
-        self.prev_left = 0.0
-        self.left = 0.0
+        # ✅ [Subscriber] 명령이 들어오면 즉시 쏩니다 (Event-Driven)
+        self.subscription = self.create_subscription(
+            WheelRPM, 
+            '/cmd_rpm', 
+            self.cmd_callback, 
+            10
+        )
 
-        self.cmd_received_recently = False
+        # ✅ [Publisher] 모터 상태
+        self.rpm_publisher = self.create_publisher(Float32, '/motor/rpm', 10)
+        self.encoder_publisher = self.create_publisher(Int32, '/motor/encoder', 10)
 
-        # ✅ ROS Sub / Pub
-        self.subscription = self.create_subscription(WheelRPM, '/cmd_rpm', self.cmd_callback, 10)
-        self.rpm_publisher = self.create_publisher(Int16, '/left_rpm', 10)
-        self.encoder_publisher = self.create_publisher(Int32, '/encoder', 10)
-        self.odom_publisher = self.create_publisher(Odometry, '/odom', 10)
+        # ✅ [Timer] 수신(RX) 전용 - 100Hz (0.01초)
+        # 송신은 여기서 하지 않습니다! 오직 수신만 담당하여 속도를 높입니다.
+        self.timer = self.create_timer(0.01, self.rx_timer_callback)
+        self.trigger=False
 
-        # ✅ Timer 콜백 (100Hz 송신)
-        self.timer = self.create_timer(0.01, self.timer_callback)
-        self.safety_timer = self.create_timer(0.1, self.safety_timer_callback)
-
+    # =========================================================
+    # 📤 [송신부] Callback 방식 (명령이 올 때만 실행)
+    # =========================================================
     def cmd_callback(self, msg):
-        self.latest_cmd_rpm = msg
-        self.cmd_received_recently = True
-
-    def timer_callback(self):
         if not self.bus:
             return
+        # 현재 명령값
+        l_rpm = int(msg.left_rpm)
+        r_rpm = int(msg.right_rpm)
 
-        l_rpm = self.latest_cmd_rpm.left_rpm
-        r_rpm = self.latest_cmd_rpm.right_rpm
+        # 🚀 최적화: 이전 값과 다를 때만 전송 (Bus 부하 감소)
+        # (만약 모터가 Heartbeat가 필요하다면 이 조건문을 빼거나 별도 타이머가 필요함)
+        if (l_rpm != self.prev_left_cmd) or (r_rpm != self.prev_right_cmd):
+            data = [
+                1,                  
+                l_rpm & 0xFF,       
+                (l_rpm >> 8) & 0xFF, 
+                1,                  
+                r_rpm & 0xFF,       
+                (r_rpm >> 8) & 0xFF, 
+                0                   
+            ]
 
-        data = [1, l_rpm & 0xFF, (l_rpm >> 8) & 0xFF,
-                1, r_rpm & 0xFF, (r_rpm >> 8) & 0xFF, 0]
+            # 즉시 전송
+            if l_rpm==0 and r_rpm==0:
+                print(f"velocity:0!")
+                self.send_pid_frame(10, [44]) 
+            else:
+                self.send_pid_frame(207, data)
+            # self.send_can_message(0xCF, data) # PID 207
 
-        self.send_pid_frame(207, data)
-        self.receive_can()
+            # 상태 업데이트
+            self.prev_left_cmd = l_rpm
+            self.prev_right_cmd = r_rpm
+            
+            # 디버깅용 (필요시 주석 해제)
+            self.get_logger().info(f"📤 명령 전송: L={l_rpm}, R={r_rpm}")
 
-    def safety_timer_callback(self):
-        if not self.bus:
-            return
-        if not self.cmd_received_recently:
-            self.send_pid_frame(207, [1, 0, 0, 1, 0, 0, 0])
-        else:
-            self.cmd_received_recently = False
+    def send_can_message(self, arbitration_id, data):
+        try:
+            msg = can.Message(arbitration_id=arbitration_id, data=data, is_extended_id=False)
+            self.bus.send(msg)
+        except can.CanError:
+            pass # 에러 무시
 
-    # ✅ Kvaser 방식 → python-can 전송 방식으로 변경
     def send_pid_frame(self, pid, data):
         if not self.bus:
             return
@@ -79,35 +106,67 @@ class CANInterface(Node):
         except can.CanError:
             self.get_logger().error("[TX ERROR] CAN 메시지 송신 실패")
 
-    # ✅ 수신부 SocketCAN으로 변경
-    def receive_can(self):
+    # =========================================================
+    # 📥 [수신부] Timer 방식 (Polling & Flushing)
+    # =========================================================
+    def rx_timer_callback(self):
         if not self.bus:
             return
-        try:
-            frame = self.bus.recv(timeout=0.001)
-            if frame is None:
-                return
-            data = frame.data
-            if data[0] != 196:
-                return
+        
+        # 🚀 While Loop: 버퍼에 쌓인 모든 데이터를 싹 비웁니다 (반응속도 극대화)
+        while True:
+            try:
+                frame = self.bus.recv(timeout=0) # Non-blocking
+                if frame is None:
+                    break
+                
+                # 타겟 ID 필터링
+                if frame.arbitration_id != self.target_id:
+                    continue
 
-            self.left_rpm = int.from_bytes(data[2:4], 'little', signed=True)
-            self.left_encoder = int.from_bytes(data[4:8], 'little', signed=True)
+                data = frame.data
+                if data[4]==0x02 or data[4]==0x01:
+                    print("TRIGGER ON!!")
 
-            rpm_msg = Int16()
-            rpm_msg.data = self.left_rpm
-            self.rpm_publisher.publish(rpm_msg)
+                    # data = [
+                    #     1,                  
+                    #     0 & 0xFF,       
+                    #     (0 >> 8) & 0xFF, 
+                    #     1,                  
+                    #     0 & 0xFF,       
+                    #     (0 >> 8) & 0xFF, 
+                    #     0                   
+                    # ]
+                    # self.send_pid_frame(207, data)
+                    self.send_pid_frame(10, [44]) 
 
-            enc_msg = Int32()
-            enc_msg.data = self.left_encoder
-            self.encoder_publisher.publish(enc_msg)
+                if len(data) < 8:
+                    continue
 
-        except Exception as e:
-            self.get_logger().error(f"[RX ERROR] {e}")
+                # 데이터 파싱 (앞 4바이트=엔코더, 뒤 3바이트=PPS)
+                raw_enc = int.from_bytes(data[0:4], 'little', signed=True)
+                raw_pps = int.from_bytes(data[4:7], 'little', signed=True)
 
-    def close(self):
+                # RPM 변환
+                real_rpm = (raw_pps * 60.0) / self.PPR
+
+                # Publish
+                msg_rpm = Float32()
+                msg_rpm.data = real_rpm
+                self.rpm_publisher.publish(msg_rpm)
+
+                msg_enc = Int32()
+                msg_enc.data = raw_enc
+                self.encoder_publisher.publish(msg_enc)
+                # print(f" RPM:{real_rpm} | encoder:{raw_enc}")
+            except Exception as e:
+                self.get_logger().error(f"RX Error: {e}")
+                break
+
+    def destroy_node(self):
         if self.bus:
             self.bus.shutdown()
+        super().destroy_node()
 
 def main(args=None):
     rclpy.init(args=args)
@@ -117,7 +176,6 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
-        node.close()
         node.destroy_node()
         rclpy.shutdown()
 

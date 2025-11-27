@@ -1,10 +1,10 @@
 {
   "package_name": "custom_msgs",
   "non_idl_tuples": [
-    "/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/WheelRPM.msg",
-    "/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/CameraInfo.msg",
-    "/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/UTMPoint.msg",
-    "/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs:srv/GetPTZImage.srv",
-    "/home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs:action/MapsDistance.action"
+    "/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/WheelRPM.msg",
+    "/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/CameraInfo.msg",
+    "/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs:msg/UTMPoint.msg",
+    "/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs:srv/GetPTZImage.srv",
+    "/home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs:action/MapsDistance.action"
   ]
 }

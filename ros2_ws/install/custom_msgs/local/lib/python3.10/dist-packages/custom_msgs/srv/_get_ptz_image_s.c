@@ -1,1 +1,1 @@
-/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_get_ptz_image_s.c
+/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_get_ptz_image_s.c

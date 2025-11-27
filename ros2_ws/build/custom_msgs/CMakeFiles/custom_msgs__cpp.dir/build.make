@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs
 
 # Utility rule file for custom_msgs__cpp.
 
@@ -210,8 +210,8 @@ rosidl_generator_cpp/custom_msgs/msg/wheel_rpm.hpp: /opt/ros/humble/share/action
 rosidl_generator_cpp/custom_msgs/msg/wheel_rpm.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_cpp/custom_msgs/msg/wheel_rpm.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_cpp/custom_msgs/msg/wheel_rpm.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_msgs/msg/detail/wheel_rpm__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/wheel_rpm.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/wheel_rpm__builder.hpp
@@ -323,6 +323,6 @@ CMakeFiles/custom_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/clean
 
 CMakeFiles/custom_msgs__cpp.dir/depend:
-	cd /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/krri/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/src/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs /home/nvidia/Motor-Controller-CAN/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/depend
 
